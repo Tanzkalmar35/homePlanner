@@ -3,6 +3,8 @@ package com.example.homeplanner;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -18,6 +20,7 @@ import com.example.homeplanner.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button btn;
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
@@ -32,8 +35,7 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Toast.makeText(getBaseContext(), "You pressed the btn", Toast.LENGTH_SHORT).show();
             }
         });
         DrawerLayout drawer = binding.drawerLayout;
@@ -62,4 +64,6 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+
 }
