@@ -15,6 +15,8 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.homeplanner.R;
 import com.example.homeplanner.databinding.FragmentHomeBinding;
 
+import org.w3c.dom.Text;
+
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
@@ -29,6 +31,7 @@ public class HomeFragment extends Fragment {
         View root = binding.getRoot();
 
         final TextView textView = binding.textHome;
+
         homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
