@@ -7,14 +7,26 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:title="Home Screen" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:title="Calendar" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="Notes" />
+        <item
+            android:id="@+id/nav_training_plan"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Training Plan" />
+        <item
+            android:id="@+id/nav_schoolPlan"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="School Schedule" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="?attr/actionModeSelectAllDrawable"
+            android:title="Settings" />
     </group>
 </menu>
